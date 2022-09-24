@@ -15,3 +15,4 @@
 # print(x[::-1])
 
 print("now it is updated to github")
+print("This is initial stage project we will update every time")
