@@ -378,9 +378,24 @@ import subprocess
 # print(greet())
 
 
+# def out_fun():
+#     task="this is the outside function"
+#     def inner_fun():
+#         print(task)
+#     return inner_fun()
+# out_fun()
+#
+# ob=out_fun()
 
 
+def fri(func):
+    print("prepare python very well ")
+    func()
+    print("do practice very well")
+def show():
+    print("welcome to world")
 
+ob=fri(show)
 
 
 
