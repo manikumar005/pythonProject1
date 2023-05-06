@@ -388,14 +388,32 @@ import subprocess
 # ob=out_fun()
 
 
-def fri(func):
-    print("prepare python very well ")
-    func()
-    print("do practice very well")
-def show():
-    print("welcome to world")
+# def fri(func):
+#     print("prepare python very well ")
+#     func()
+#     print("do practice very well")
+# def show():
+#     print("welcome to world")
+#
+# ob=fri(show)
 
-ob=fri(show)
+# def n(l):
+#     # l=[2,3,2,45,3,5,45,2,45,35,45,66,99,69]
+#     c=0
+#     n=l[0]
+#     for i in l:
+#         x=l.count(i)
+#         if x>c:
+#             c=x
+#             n=i
+#     print(n,c)
+# n([33,2,45,3,5,45,2,45,35,45,66,99,69])
+# n((33,44,55,44,3,2,44,55,66))
+
+
+
+
+
 
 
 

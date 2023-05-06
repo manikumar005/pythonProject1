@@ -147,6 +147,30 @@
 #             l[i],l[j]=l[j],l[i]
 # print(l)
 
+# def mani(l):
+#     c=0
+#     n=l[0]
+#     for i in l:
+#         x=l.count(i)
+#         if x>c:
+#             c=x
+#             n=i
+#     print(n,c)
+# mani([11,22,33,44,11,3,44,55,44,556,44,3])
+
+# s="aabbccdc"
+# s1=""
+# for i in (s):
+#     if i in s1:
+#         d=i
+#     else: s1=s1+d*s1.count(i)
+# print(s1)
+
+
+
+
+
+
 
 
 
