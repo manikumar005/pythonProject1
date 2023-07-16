@@ -1,9 +1,3 @@
-# from selenium import webdriver
-# driver=webdriver.Chrome()
-# # driver.get("https://www.facebook.com/home.php")
-# driver.get("https://www.facebook.com/login.php")
-# driver.find_element("email").send_keys("manikumar8484@gmail.com")
-# driver.find_element("password").send_keys("M@ni2525")
 
 # from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service

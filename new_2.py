@@ -36,7 +36,7 @@
 
 # [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-# l=[1,1,2,3,4,4,5,5,6,1] #write a program to collect dupilcate elements
+# l=[1,1,2,3,4,4,5,5,6,1,4,5,5,4] #write a program to collect dupilcate elements
 # s=set();l1=[]
 # for i in l:
 #     if i not in s:
@@ -44,6 +44,13 @@
 #     elif i not in l1:
 #         l1.append(i)
 # print(l1,s)
+# l2=[];l3=[]
+# for i in l:
+#     if i not in l2:
+#         l2.append(i)
+#     elif i not in l3:
+#         l3.append(i)
+# print(l2,l3)
 
 # import re
 # test_string = "1w3e4r5t6y7u7i8i"

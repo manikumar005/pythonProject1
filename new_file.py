@@ -19,10 +19,12 @@
 #         else:d[i]=1
 #     print(d)
 # st()
+
 # s1="basically the san envirenment is good san is using block level san using the iscsi protocol"
 # s2=s1.split()
 # d={i:s2.count(i) for i in s2}
 # print(d)
+# d={}
 # for i in s2:
 #   d[i]=d.get(i,0)+1
 # print(d)
@@ -126,7 +128,82 @@
 #     print(f'{m.group()} is valid number')
 
 
+# def hello():
+#     """"This function prints
+#        message on the screen"""
+#     print('Hello, World!')
+# hello()
 
+# a=5
+# def add():
+#     b=4
+#     c=a+b
+#     print(c)
+# add()
+
+# a=5
+# def add(*l):
+#     s=0
+#     for i in l:
+#         s=i+s
+#     return s
+# y=add(2,3,4,5)
+# print(y)
+#
+# l=[11,22,1]
+# s=0
+# for i in l:
+#     s=s+i
+# print(s)
+
+# class Vehicle:
+#     def description(self):
+#         print(" here is going to print the vechicle  class")
+# class Car(Vehicle):
+#     def speed(self):
+#         print(" the vehicvle speed is good ")
+# v=Vehicle()
+# c=Car()
+# v.description()
+# c.description()
+# c.speed()
+
+# class Vehicle:
+#     def __init__(self,color):
+#         self.color=color
+#     def dec(self):
+#         print(" I am the", self.color, " and a vehicle")
+# class Car(Vehicle):
+#     def __init__(self,color,style):
+#         super().__init__(color)
+#         self.color=color
+#         self.style=style
+#     def dec(self):
+#         print("I'm a", self.color, self.style)
+# v=Vehicle("red")
+# c=Car("green","rvg")
+# # v.dec()
+# c.dec()
+
+# fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']
+# vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']
+# l = [];d={}
+# for f, v in zip(fruits, vegetables):
+#     l.append({'fruit':f, 'veg':v})
+# print(l)
+# for k,v in zip(fruits,vegetables):
+#     d[k]=v
+# print(d)
+
+# names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']
+# *a,b,c=names
+# print(a,b,c)
+# *a,b,c=names
+# print(f' the value a :{a} and the b : {b}')
+d={"a":25,"b":45,"c":[11,22,33,44],"d":["mani","kumar"]}
+d1={};l1=[]
+for k in d:
+    print(k,d[k])
 
 
 

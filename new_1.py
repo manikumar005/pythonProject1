@@ -170,7 +170,7 @@
 #     def change(self,new_age,new_id):
 #         self.age=new_age
 #         self.id=new_id
-#     @classmethod
+# #     @classmethod
 #     def modify(cls,new_school):
 #         cls.school=new_school
 # ob=studient("mani",25,125)
@@ -179,6 +179,27 @@
 # ob.show()
 # ob.modify("oxford school")
 # ob.show()
+
+# class stu:
+#     sch="abc"
+#     def __init__(self,name,age,id):
+#         self.name=name
+#         self.id=id
+# #         self.age=age
+#     def show(self):
+#         print(f'studient details: {self.name} {self.age} {self.id}')
+#     def change(self,age,id):
+#         self.age=age
+#         self.id=id
+#     @classmethod
+#     def modify(cls,new_sch):
+#         cls.sch=new_sch
+# ob=stu("mani","25",45)
+# ob.show()
+# ob.change(21,125)
+# ob.show()
+# print(ob.sch)
+# print(ob.modify("vikas"))
 
 # import re
 # def match(text):
@@ -209,7 +230,7 @@
 # print(par("aabbcc"))
 # print(par("aabbbc"))
 
-import re
+# import re
 # s="greeks.for greeks"
 # exp=re.search(".",s)
 # print(exp)
@@ -263,7 +284,7 @@ import re
 #         continue
 #     print(i,end=" , ")
 
-# fo=open("D:python file.txt","r+")
+# fo=open("D:\\file.txt","r+")
 # x=fo.read()
 # fo.write("mani you can do your best")
 # fo.write("\n")
@@ -316,7 +337,7 @@ import subprocess
 #     if i==3:
 #         x=l.index(i)
 #         l[x]="mani"
-#     if i==5:
+#     if i==2:
 #         y=l.index(i)
 #         l[y]="m"
 # print(l)
@@ -410,10 +431,171 @@ import subprocess
 # n([33,2,45,3,5,45,2,45,35,45,66,99,69])
 # n((33,44,55,44,3,2,44,55,66))
 
+# import subprocess
+#
+# def check_disk_space():
+#     command = ['df', '-Th']
+#     result = subprocess.run(command, stdout=subprocess.PIPE, text=True)
+#     disk_usage = result.stdout
+#     return disk_usage
+#
+# disk_usage = check_disk_space()
+# print(disk_usage)
+#
+# import subprocess
+#
+# def check_network_status():
+#     command = ['ping', '-c', '4', 'google.com']
+#     result = subprocess.run(command, stdout=subprocess.PIPE, text=True)
+#     ping_output = result.stdout
+#     return ping_output
+#
+# network_status = check_network_status()
+# print(network_status)
+#
+# import paramiko
+#
+# # Create an SSH client
+# ssh = paramiko.SSHClient()
+#
+# # Automatically add the server's host key
+# ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+#
+# # Connect to the SSH server
+# ssh.connect('hostname', username='username', password='password')
+
+# # Execute a remote command
+# stdin, stdout, stderr = ssh.exec_command('ls /path/to/remote_directory')
+# for line in stdout.readlines():
+#     print(line.strip())
+#
+# # Transfer files via SCP
+# sftp = ssh.open_sftp()
+# sftp.put('/path/to/local_file', '/path/to/remote_file')
+# sftp.get('/path/to/remote_file', '/path/to/local_file')
+#
+# # Close the SSH connection
+# ssh.close()
+
+# f1=open("test.txt","r+")
+# x=f1.readlines()
+# r=" "
+# for i in x:
+#     r=i+r
+# f1.seek(0)
+# f1.write(r)
+# f1.close()
+
+# s2="mani kumar"
+# def name(func):
+#     print(s2)
+#     func()
+# @name
+# def greet():
+#     print(s2.upper())
+
+# class Mycls:
+#     def __disp1(self):
+#         print(" this 1st display")
+#     def disp2(self):
+#         print("this 2nd display")
+#         self.__disp1()
+# ob=Mycls()
+# ob.disp2()
+
+# def even():
+#     n=1
+#     while True:
+#         yield n
+#         n=n+2
+# x=even()
+# print(next(x))
+# print(next(x))
+
+# class P:
+#     def property(self):
+#         print(" this parent property")
+#     def marriage(self):
+#         print(" gold, car | house")
+# class C(P):
+#     def property(self):
+#         super().property()
+#         print(" ok done ")
+# ob=C()
+# ob.property()
+# ob.marriage()
+
+# class Stu:
+#     s="vikas"
+#     def show(self):
+#         print(self.s)
+# ob=Stu()
+# ob.show()
+# print(Stu.s)
+#
+# class S():
+#     __name="abc"
+#     def display(self):
+#         print(self.__name)
+# ob1=S()
+# ob1.display()
+
+# l=[1,2,0,3,9,0,11,12]
+# for i in l:
+#     if i==3:
+#         l.remove(i)
+#         l.append(i)
+# print(l)
+
+# from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.common.by import By
+# from webdriver_manager.chrome import ChromeDriverManager
+# ch_op=Options()
+# ch_op.add_experimental_option("detach",True)
+# driver=webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=ch_op)
+# driver.get("https://demo.automationtesting.in/Index.html")
+# driver.maximize_window()
+# driver.implicitly_wait(5)
+# d=driver.find_element(By.ID,"email").send_keys("facebook.login")
+# d=driver.find_element(By.ID,"enterimg").click()
+# driver.maximize_window()
+# driver.minimize_window()
+# s=driver.find_element(By.ID,"radiooptions")
 
 
+# l1=list(filter(lambda x:x%2==0 ,range(10)))
+# print(l1)
+# l2=tuple(filter(lambda y:y%2==0 , [1,2,3,4,5,6,7,8,9]))
+# print(l2)
+# l3=[i for i in range(10) if i%2==0]
+# print(l3)
 
+# units=int(input("enetr the units:"))
+# if units<100:
+#     print(units," the units will be zero")
+# elif units>100 and units<200:
+#     print(units*5, "the units is greater that 100 its multible by 5")
+# else:print(units*10,"if units 200 more than")
 
+"""l1=[1,2,3,4,5,6,7,8,9,10,11,12]
+l2=[n for n in l1 if n%2==0 if n%3==0]
+print(l2)
+l3=[]
+for i in l1:
+    if i%2==0 and i%3==0:
+        l3.append(i)
+print(l3)"""
+
+# l1 = []
+# for n1 in range(3):
+#     sublist = []
+#     for n in range(10):
+#         if n % 2 == 0:
+#             sublist.append(n)
+#     l1.append(sublist)
+# print(l1)
 
 
 

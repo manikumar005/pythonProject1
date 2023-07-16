@@ -131,6 +131,16 @@
 # @name
 # def greet():
 #     print(s1.upper())
+#
+# s2="mani kumar"
+# def fun(name):
+#     print(s2)
+#     name()
+# @fun
+# def change():
+#     print(s2.upper())
+
+
 
 # l=[10,20,30,40,50,60]
 # print(l[1::-1])
@@ -165,6 +175,116 @@
 #         d=i
 #     else: s1=s1+d*s1.count(i)
 # print(s1)
+
+# class Person():
+#     def __init__(self,name,age,can_vote):
+#         self.name=name
+#         self.age=age
+#         self.can_vote=can_vote
+#     @staticmethod
+#     def adult(age):
+#         if age>=18:
+#             return True
+#         else:return False
+#     @classmethod
+#     def vote(cls,name,age):
+#         if cls.adult(age)==True:
+#             return cls(name,age,"yes")
+#         else:return cls(name,age,"no")
+# ob1=Person.vote("mani",25)
+# ob2=Person.vote("rj",15)
+# print(ob1.name,ob1.can_vote)
+# print(ob2.name,ob2.can_vote)
+
+
+# class Stu:
+#     def __init__(self,name,age):
+#         self.age=age
+#         self.name=name
+#     def show(self):
+#         return self.name, self.age
+# s1=Stu("mani",25)
+# print(s1.show())
+
+# class Stu:
+#     name="mani"
+#     @classmethod
+#     def chnage(cls):
+#         print(cls.name)
+# s1=Stu()
+# s1.chnage()
+
+# class stu:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     @classmethod
+#     def modif(cls,name,age):
+#         return cls(name,age+1)
+# s1=stu("mani",26)
+# s1=stu.modif("kum",25)
+# print(s1.name,s1.age)
+# print(s2.name,s2.age)
+
+# class Num:
+#     @staticmethod
+#     def even(x):
+#         if x%2==0:
+#             return x,True, " evern "
+#         else:return x,False
+# ob=Num()
+# print(ob.even(22))
+
+# d={" name1 ":22," name2 ":45}
+# d1={}
+# for k,v in d.items():
+#     x=k.replace(" ","")
+#     d1[x]=v
+# print(d1)
+
+import re
+# sen="8500501557"
+# exp="[\d][0-9]{9}"
+# m=re.match(exp,sen)
+# if m:
+#     print(m.group()," valid")
+# else:print("not valid ")
+
+# s=" hello welcome to world the sentence is 10.5 and 111 and 45.5 hello 11"
+# exp="[\d]+[\d\.]+"
+# m=re.findall(exp,s)
+# print(m)
+
+# s2=" hello welcome to world the sentence is 10.5 and 111 and 45.5 hello 11"
+# exp="[a-zA-Z0-9\.\-]+"
+# m=re.match(exp,s2)
+# if m:
+#     print(m.group(),"valid sentence")
+# else:print("invalid sentence")
+
+# def find_duplicates(lst):
+#     return list(set([item for item in lst if lst.count(item) > 1]))
+
+# Example usage
+# my_list = [1, 2, 3, 4, 1, 2, 5, 6, 3,1]
+# print(find_duplicates(my_list))
+#
+# def dup(l):
+#     x=set([i for i in l])
+#     print(x)
+# dup([11,22,1,2,3,11,2,1,22])
+
+# def find_duplicates(lst):
+#     duplicates = {}
+#     for item in lst:
+#         if item in duplicates:
+#             duplicates[item] += 1
+#         else:
+#             duplicates[item] = 1
+#     return [item for item, count in duplicates.items() if count > 1]
+# # Example usage
+# my_list = [1, 2, 3, 4, 1, 2, 5, 6, 3]
+# print(find_duplicates(my_list))
 
 
 

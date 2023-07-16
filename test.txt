@@ -1,5 +1,7 @@
-hello This is a remote file
-Newly created file 
-now you can update everything
-o
 
+hello every one welcome to python learnung coure
+o
+now you can update everything
+Newly created file 
+hello This is a remote file
+ 

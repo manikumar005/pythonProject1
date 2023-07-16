@@ -248,6 +248,109 @@
 #             l1[i],l1[j]=l1[j],l1[i]
 # print(l1,l1[-2])
 
+# s1="aabbcd"
+# s2=""
+# for i in s1:
+#     if i not in s2:
+#         s2=s2+i+str(s1.count(i))
+# print(s2)
+#
+# s3="a2b3c1"
+# s4=""
+# for i in s3:
+#     if i.isalpha():
+#         d=i
+#     else:s4=s4+d*int(i)
+# print(s4)
+
+
+# n=int(input("enetr:"))
+# l=[];l1=[]
+# for i in range(n):
+#     m=int(input("enetr:"))
+#     l.append(m)
+# for i in l:
+#         if i not in l1:
+#             l1.append(i)
+# print(l,l1)
+
+# d1={}
+# for i in range(n):
+#     k = input("enetr:");
+#     d = {}
+#     v = eval(input("eneter : "))
+#     d[k]=v
+# print(d1,d)
+
+# s1="mani kumar learning the python language mani"
+# d={}
+# for i in s1.split():
+#     if i not in d:
+#         d[i]=s1.count(i)
+# print(d)
+
+# d={"a":45,"b":25,"c":99}
+# m=d["a"];t=0
+# for k,v in d.items():
+#     if v>m:
+#         m=v
+# print(m)
+# for v in d:
+#     t=t+d[v]
+#     print(v,d[v])
+# print(t)
+
+# s1="mani kumar"
+# def outer(func):
+#     def inner():
+#         s2=func()
+#         return s2.upper()
+#     return inner()
+
+# c=input("enter single chater")
+# while len(c)!=1:
+#     print("please enetr the single chat")
+#     c=input("enetr ")
+
+# n=int(input("enetr num:"))
+# while len(str(n))!=1:
+#     print("enetr single number")
+#     n=int(input("enetr"))
+
+# def mani():
+#     s1=(input("enetr"))
+#     s2=input("enetr:")
+#     if s1.isalpha() and s2.isalpha():
+#         print(s1+s2)
+#     elif s1.isdigit() and s2.isdigit():
+#         print(int(s1)+int(s2))
+#     else:print("invalid input")
+# mani()
+
+# def list(n):
+#     l1=[]
+#     for i in n:
+#         if i not in l1:
+#             l1.append(i)
+#     print(l1)
+# list([2,3,4,2,3,4,44,11])
+
+# l4=[11,22,33,44,22]
+# def l(*n):
+#     l1=[]
+#     for i in n:
+#         if i%2==0:
+#             l1.append(i)
+#     return l1
+#
+# # ob=l([11,22,33,44,22])
+# # print(ob)
+# ob1=l(1,2,3,4,5,6)
+# print(ob1)
+
+
+
+
 
 
 
